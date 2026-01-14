@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.navbar {
+  background: #067260;
+  color: rgb(0, 0, 0);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background: #067260;
+  outline: 2px solid rgb(5, 5, 5);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+button:hover {
+  background: #292929;
+}
+
+/* for dark/light theme */
+
+body {
+  transition: 0.3s;
+}
+
+/* Dark mode */
+.dark {
+  background:#067260;
+  color: white;
+}
+
+.dark nav {
+  background: #020617;
+}
+
+.dark .card {
+  background: #020617;
+  color: white;
+  border: 1px solid #067260;
+}
+
+.dark input,
+.dark textarea {
+  background: #020617;
+  color: white;
+  border: 1px solid #067260;
+}
+ /* detail */
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .detail-container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  .detail-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  #backBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #006666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #backBtn:hover {
+    background-color: #005555;
+  }
+
+
+/* responsiveness */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  input, textarea, button {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
